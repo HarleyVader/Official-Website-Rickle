@@ -22,7 +22,8 @@ const tokenAddress = {
   bsc: "0xeca15e1bbff172d545dd6325f3bae7b737906737",
   xdai: "0x2dF5912439d2D14d04a7742346508505288eF367",
   matic: "0x9fDC23fe295104Ac55fef09363c56451D0E37CFA",
-  harmony: "0x32EB48b083acCe94d994CE885d9AB295c081f884"
+  harmony: "0x32EB48b083acCe94d994CE885d9AB295c081f884",
+  gnosis: "0x2dF5912439d2D14d04a7742346508505288eF367"
 };
 
 const chainParams = {
@@ -80,6 +81,17 @@ const chainParams = {
     },
     rpcUrls: ["https://api.harmony.one/"],
     blockExplorerUrls: ["https://explorer.harmony.one/"]
+  },
+  gnosis: {
+    chainId: ethers.utils.hexlify(100),
+    chainName: "Gnosis Chain",
+    nativeCurrency: {
+      name: "xDai",
+      symbol: "xDAI",
+      decimals: 18
+    },
+    rpcUrls: ["https://rpc.gnosis.gateway.fm"],
+    blockExplorerUrls: ["https://blockscout.com/xdai/mainnet"]
   }
 };
 
